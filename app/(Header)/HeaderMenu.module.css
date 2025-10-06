@@ -1,0 +1,61 @@
+.header {
+  height: 56px;
+  margin-bottom: 30px;
+  background-color: var(--mantine-color-body);
+  border-bottom: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.innerIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+
+}
+
+.innerAvatars {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  padding: 8px 12px;
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 500;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+  }
+}
+
+.linkLabel {
+  margin-right: 5px;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
