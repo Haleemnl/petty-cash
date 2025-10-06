@@ -13,7 +13,6 @@ import {
     TableTh,
     TableThead,
     TableTr,
-    Text,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import React, { useEffect, useState } from "react";
@@ -34,7 +33,7 @@ interface PettyCashItem {
 
 
 const StaffViewTable = () => {
-    const [elements, setElements] = useState<any[]>([]);
+    const [elements, setElements] = useState<PettyCashItem[]>([]);
     const [filter, setFilter] = useState<string | null>(null);
 
     //Drawer state
