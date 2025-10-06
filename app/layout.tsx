@@ -3,17 +3,12 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ColorSchemeScript, Container, createTheme, MantineProvider, mantineHtmlProps } from '@mantine/core';
 import '@mantine/core/styles.css';
+import '@mantine/dates/styles.css';
+
 import { HeaderMenu } from "./(Header)/HeaderMenu";
-
-
-import BreadCrumbs from "@/conponents/BreadCrumbs";
-import { IconHelp, IconSettings } from "@tabler/icons-react";
 import BreadCrumbsUI from "./(Header)/BreadCrumbsUI";
 
 
-// const theme = createTheme({
-//   /** Put your mantine theme override here */
-// });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,7 +38,6 @@ export default function RootLayout({
 
 
   return (
-    // <html lang="en" {...mantineHtmlProps}>
     <html lang="en" >
       <head>
         <ColorSchemeScript />

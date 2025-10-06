@@ -2,7 +2,7 @@
 "use client";
 
 import { TextInput, Textarea, NumberInput, Flex, Button, Box } from "@mantine/core";
-import { DateInput } from "@mantine/dates";
+import { DateInput, DatePickerInput } from "@mantine/dates";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -61,6 +61,7 @@ const PettyCashForm = () => {
                     onChange={(e) => setStaffID(e.currentTarget.value)}
                 />
 
+                {/* <DatePickerInput */}
                 <DateInput
                     value={date}
                     onChange={(value) => setDate(value as Date | null)}
@@ -70,6 +71,7 @@ const PettyCashForm = () => {
                     w="100%"
                     clearable
                 />
+
             </Flex>
 
             <TextInput
@@ -144,6 +146,9 @@ const PettyCashForm = () => {
                 >
                     Submit
                 </Button>
+
+
+
             </Flex>
         </Box>
     );
